@@ -18,6 +18,7 @@
 </style>
 
 <script src="https://kenblanchard--kbdevb2b.sandbox.my.site.com/lightning/lightning.out.js"></script>
+<script src="https://kenblanchard--kbdevb2b.sandbox.my.site.com/lightning/lightning.out.js"></script>
 
 <div data-lightning-out="true"></div>
 <script>
@@ -30,19 +31,6 @@
 
     };
     $Lightning.use(
-        appName, function (){
-            $Lightning.createComponent(
-                componentName,
-                componentAttributes,
-                targetElement,
-                function (cmp){
-                    console.log('lightning component created');
-                }
-            );
-        },
-        lightningEndPoint
-    );
- $Lightning.use(
         appName, function (){
             $Lightning.createComponent(
                 componentName,
