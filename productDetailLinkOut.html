@@ -20,7 +20,6 @@
 <script src="https://kenblanchard--kbdevb2b.sandbox.my.site.com/lightning/lightning.out.js"></script>
 
 <div data-lightning-out="true"></div>
-<div data-lightning-out="true"></div>
 <script>
     const appName = 'c:lightningOutApp';
     const componentName = 'c:productDetailLink';
@@ -31,6 +30,19 @@
 
     };
     $Lightning.use(
+        appName, function (){
+            $Lightning.createComponent(
+                componentName,
+                componentAttributes,
+                targetElement,
+                function (cmp){
+                    console.log('lightning component created');
+                }
+            );
+        },
+        lightningEndPoint
+    );
+ $Lightning.use(
         appName, function (){
             $Lightning.createComponent(
                 componentName,
